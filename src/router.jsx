@@ -1,6 +1,9 @@
 import App from './pages/app/index';
-import Contato from './pages/contato/index'
-import Naoencontrado from './pages/nao encontrado';
+import Cupom from './pages/cupom/index';
+
+
+
+
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 
@@ -11,9 +14,9 @@ export default function Navegacao() {
         <BrowserRouter>
             <Routes>
                 <Route path='/' element={<App />} />
-                <Route path='/contato' element={<Contato />} />
+                <Route path='/cupom' element={<Cupom />} />
 
-            <Route path='*'element={<Naoencontrado/>}/>
+            <Route/>
             </Routes>
         </BrowserRouter>
     )
