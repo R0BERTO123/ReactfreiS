@@ -1,0 +1,52 @@
+.Tudo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #6278F7;
+    
+  }
+  
+  
+  
+  
+  
+  .FREI {
+   display: flex;
+   background-color: #6278F7;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   
+  
+  }
+  
+  img{height: 100px;}
+  
+  .inicio{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 500px;
+   
+    
+  }
+
+  .textos img{
+    width: 40px;
+height: 40px;
+top: 297px;
+left: 40px;
+gap: 0px;
+opacity: 0px;
+position: absolute;
+
+
+
+}
+
+
+.textos{
+    display: flex;
+    flex-direction: row;
+    
+}

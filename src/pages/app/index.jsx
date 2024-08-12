@@ -41,7 +41,7 @@ export default function App() {
   
 </div>
 <p>cupon de desconto</p>
-<p>exercicio 1</p>
+<p><Link to={"/tabuada"}>exercicio 2</Link></p>
 </div>
 
 <div className='cartao'>

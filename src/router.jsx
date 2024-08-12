@@ -1,5 +1,6 @@
 import App from './pages/app/index';
 import Cupom from './pages/cupom/index';
+import Tabuada from './pages/tabuada';
 
 
 
@@ -15,6 +16,7 @@ export default function Navegacao() {
             <Routes>
                 <Route path='/' element={<App />} />
                 <Route path='/cupom' element={<Cupom />} />
+                <Route path='/tabuada'element={<Tabuada/>}/>
 
             <Route/>
             </Routes>
