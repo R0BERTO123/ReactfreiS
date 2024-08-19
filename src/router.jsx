@@ -1,6 +1,7 @@
 import App from './pages/app/index';
 import Cupom from './pages/cupom/index';
 import Tabuada from './pages/tabuada';
+import Imc from './pages/imc';
 
 
 
@@ -17,6 +18,7 @@ export default function Navegacao() {
                 <Route path='/' element={<App />} />
                 <Route path='/cupom' element={<Cupom />} />
                 <Route path='/tabuada'element={<Tabuada/>}/>
+                <Route path='/imc'element={<Imc/>}/>
 
             <Route/>
             </Routes>

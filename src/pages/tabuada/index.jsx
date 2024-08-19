@@ -7,35 +7,25 @@ import { useState } from 'react'
 
 
 export default function E11() {
-cost [valor, setValor] = useState(0);
-   cost [tabuadas, setTabuadas] = useState([])};
+   const [valor, setValor] = useState(0);
+   const [tabuadas, setTabuadas] = useState([]);
 
+   function calcularTabuada() {
+       let tabuada = []
+       let zero =0
 
+       for (let i = 0; i <= 10; i++) {
+           let resultado = zero * valor
+           let tabuadaTexto = `${valor} x ${zero} = ${resultado}`
 
+           tabuada.push(tabuadaTexto)
+           zero++
+       }
 
-
-  
-
-
-  export default function Tabuada(){
-
-
-     function calcularTabuada() {
-        let valor =0
-        let tabuada = []
-        let zero = 0
-
-        for(let i = 0;i<10;i++){
-            let multipica = valor *zero
-            zero++
-
-            tabuada[i]=multipica
-        }
-
-
-       return( setTabuadas(tabuada))
-    }
-
+       setTabuadas(tabuada)
+   }
+       
+    
 
     return(
         <div className="tabuada">
@@ -76,15 +66,14 @@ cost [valor, setValor] = useState(0);
 
         <p>tabuada do:</p>
 
-        <input placeholder='0' value={valor}onChange={e=>setValor(e.target.value)} />
+        <input   placeholder='0'   onChange={e => setValor(e.target.value)} />
 
-        <button className='executar'onClick={e=>calcularTabuada(e.target.setValor)}>Executar</button>
+<button  className='executar'  onClick={calcularTabuada}>Executar</button>
               
-
-            <p onClick={tabuadas}></p>
+{tabuadas.map(linha => <p>{linha}</p>)}
        </div>
 
 
     </div>
     )
-    }
+   }
