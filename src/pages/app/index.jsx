@@ -3,65 +3,108 @@ import './index.scss';
 
 import { Link } from 'react-router-dom';
 
+import Cabecalho, { Cartao } from '../../components/components';
+
 export default function App() {
   return (
-    <div className='todo2'>
-    <div className='Tudo'>
+    <div className='pagina-inicio'>
+            <Cabecalho/>
+            <div className='menu'>
+                <div className='titulo'>
+                    <h2>Escolha um treino...</h2>
+                </div>
+                <div className='cards'>
+                   <Cartao 
+                   caminho ='/cupom'
+                   retangulo ='retangulo laranja'
+                   titulo='Cupom de desconto'
+                   subtitulo ='Exercicio 01'
+                   />
+                   <Cartao
+                   caminho ='/kg'
+                   retangulo ='retangulo verde'
+                   titulo='Converter Kg/gramas'
+                   subtitulo ='Exercicio 02'
+                   
+                   />
+                   <Cartao
+                    caminho ='/quantidade'
+                    retangulo ='retangulo ciano'
+                    titulo='Valor total por quantidade'
+                    subtitulo ='Exercicio 03'
+                   
+                   />
+                   <Cartao
+                   caminho ='/livro'
+                   retangulo ='retangulo azul'
+                   titulo='Leitura de livro'
+                   subtitulo ='Exercicio 04'
+                   
+                   />
+                   <Cartao
+                   caminho ='/media'
+                   retangulo ='retangulo outroroxo'
+                   titulo='Média de notas'
+                   subtitulo ='Exercicio 05'
+                   />
 
-    <div className="FREI">
-     <img src="/assets/img/FREII.png" alt="" />
-     <h2>React FreiS</h2>
+                   <Cartao
+                      caminho ='/salario'
+                      retangulo ='retangulo vermelho'
+                      titulo='Salário líquido'
+                      subtitulo ='Exercicio 06'
+                   
+                   />
 
-     </div>
-     <div className='inicio'>
-      <p className='esoacinho'>inicio</p>
-      
-      <p>sobre</p>
-     </div>
+                   <Cartao
+                     caminho ='/cor'
+                     retangulo ='retangulo picina'
+                     titulo='Cores primárias'
+                     subtitulo ='Exercicio 07'
+                   
+                   />
+                   <Cartao
+                     caminho ='/temperatura'
+                     retangulo ='retangulo preto'
+                     titulo='Temperatura'
+                     subtitulo ='Exercicio 08'
+                   />
 
-     </div>
+                   <Cartao
+                     caminho ='/sorvete'
+                     retangulo ='retangulo cinza'
+                     titulo='Sorveteria'
+                     subtitulo ='Exercicio 09'
+                    />
+                    <Cartao
+                     caminho ='/imc'
+                     retangulo ='retangulo marrom'
+                     titulo='Calculo de IMC com histórico'
+                     subtitulo ='Exercicio 10'
+                    />
+                    
+                    <Cartao
+                     caminho ='/tabuada'
+                     retangulo ='retangulo roxo'
+                     titulo='Tabuada'
+                     subtitulo ='Exercicio 11'
+                     />
 
-    <h1>Escolha um  treino...</h1>
+                     <Cartao
+                       caminho ='/comparador'
+                       retangulo ='retangulo outroamarelo'
+                       titulo='Comparador de pessoas'
+                       subtitulo ='Exercicio 12'
+                     />
+                    
+                   
 
-    <div className='cartoes'>
+                    
 
-      <div className='cartao'>
-
-        <div className='cor1'>
-          <p ></p>
+                    
+                </div>
+            </div>
         </div>
-        <p>cupom de desconto</p>
-        <p><Link to={"/cupom"}>exercicio 1</Link></p>
-      </div>
-
-      <div className='cartao'>
-
-<div className='cor2'>
-  <p></p>
-  
-</div>
-<p>cupon de desconto</p>
-<p><Link to={"/tabuada"}>exercicio 11</Link></p>
-</div>
-
-<div className='cartao'>
-
-<div className='cor3'>
-  <p></p>
-</div>
-<p>cupon de desconto</p>
-<p><Link to={"/imc"}>exercicio 10</Link></p>
-</div>
-
-
-
-    </div>
-
-     <h2>
-      <Link to={'/contato'}></Link>
-     </h2>
-    
-     </div>
   );
 }
 
