@@ -10,7 +10,7 @@ export default function Cabecalho(){
         <div className='titulo'>
             <img src='/assets/img/FREII.png' alt='logo'/>
             <h1>
-                React FreiS
+                React FreiSS
             </h1>
         </div>
         <div className='links'>
